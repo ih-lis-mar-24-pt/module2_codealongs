@@ -2,6 +2,7 @@ import movieData from '../movie-data.json';
 import { useState } from 'react';
 import MovieCard from './MovieCard';
 import Summary from './Summary';
+import AddMovie from './AddMovie';
 
 const mapMovieData = moviesArray => {
   return moviesArray.map(movie => {
@@ -39,9 +40,16 @@ const MovieList = () => {
     setNrSeenMovies(allSeenMovies.length);
   };
 
+  const addNewMovie = newMovie => {
+    const updatedMovieList = [newMovie, ...movies];
+
+    setMovies(updatedMovieList);
+  };
+
   return (
     <>
       <h1>Movie List</h1>
+      <AddMovie addMovieHandler={addNewMovie} />
       <Summary nrOfSeenMovies={nrSeenMovies} />
       {movies.map(movieDetails => {
         return (
