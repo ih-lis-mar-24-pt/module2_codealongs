@@ -6,6 +6,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import projectsData from './projects.json';
 import Teapot from './pages/Teapot';
+import ProjectDetail from './pages/ProjectDetail';
 
 function App() {
   return (
@@ -18,6 +19,10 @@ function App() {
         <Route
           path='/projects'
           element={<Projects projects={projectsData} />}
+        />
+        <Route
+          path='/projects/:projectId'
+          element={<ProjectDetail projects={projectsData} />}
         />
         <Route path='*' element={<Teapot />} />
       </Routes>
