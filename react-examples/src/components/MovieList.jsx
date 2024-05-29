@@ -3,6 +3,7 @@ import { useState } from 'react';
 import MovieCard from './MovieCard';
 import Summary from './Summary';
 import AddMovie from './AddMovie';
+import Empty from './Empty';
 
 const mapMovieData = moviesArray => {
   return moviesArray.map(movie => {
@@ -51,6 +52,7 @@ const MovieList = () => {
       <h1>Movie List</h1>
       <AddMovie addMovieHandler={addNewMovie} />
       <Summary nrOfSeenMovies={nrSeenMovies} />
+      {!movies.length && <Empty />}
       {movies.map(movieDetails => {
         return (
           <MovieCard
