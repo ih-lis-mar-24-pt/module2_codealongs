@@ -29,3 +29,26 @@
   border-bottom: rgba(255, 255, 255, 0.639) solid 2px;
   padding-bottom: 5px;
 }
+
+.Navbar.dark {
+  background: #515f7d;
+}
+
+.Navbar.light {
+  background: #aeafb1;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  max-height: 100%;
+}
+
+.App.light {
+  background-color: white;
+}
+
+.App.dark {
+  background-color: #2b364b;
+  color: #d6d8dc;
+}
