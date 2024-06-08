@@ -7,9 +7,7 @@ const Projects = () => {
 
   const getProjects = async () => {
     try {
-      const response = await axios.get(
-        'https://project-management-api-4641927fee65.herokuapp.com/projects'
-      );
+      const response = await axios.get('http://localhost:5005/characters');
       console.log(response.data);
       setProjects(response.data);
     } catch (error) {

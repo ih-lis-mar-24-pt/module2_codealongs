@@ -1,0 +1,38 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "name": "Harry Potter",
+      "house": "Gryffindor",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "name": "Hermione Granger",
+      "house": "Gryffindor",
+      "userId": 1
+    },
+    {
+      "name": "Syrius Black",
+      "house": "Gryffindor",
+      "id": 3
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "projectId": 1,
+      "description": "Use Vite to create a basic React app"
+    },
+    {
+      "id": 2,
+      "projectId": 1,
+      "description": "Install React Router and setup routes"
+    },
+    {
+      "id": 3,
+      "projectId": 2,
+      "description": "Create a form with 5 input fields"
+    }
+  ]
+}

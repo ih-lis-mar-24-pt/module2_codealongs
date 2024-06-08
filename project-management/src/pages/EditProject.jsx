@@ -24,6 +24,9 @@ const EditProject = () => {
         title,
         description
       };
+      // http verbs to change something that already exists
+      // patch
+      // put
       await axios.put(
         `https://project-management-api-4641927fee65.herokuapp.com/projects/${projectId}`,
         project
